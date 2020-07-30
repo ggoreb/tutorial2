@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>순번</th>
+      <th>병원명</th>
+      <th>주소</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in list %}
+    <tr>
+      <td>{{ c.id }}</td>
+      <td>{{ c.name }}</td>
+      <td>{{ c.address }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
